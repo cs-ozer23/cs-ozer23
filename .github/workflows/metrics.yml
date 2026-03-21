@@ -1,0 +1,51 @@
+name: "🧬 Self-Evolution Metrics"
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Evolution Report
+        run: |
+          TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          DAY_COUNT=$(( ($(date +%s) - $(date -d "2025-01-01" +%s)) / 86400 ))
+          COMMIT_COUNT=$(git rev-list --count HEAD)
+          REPO_SIZE=$(du -sh . --exclude=.git | cut -f1)
+          FILE_COUNT=$(find . -not -path './.git/*' -type f | wc -l)
+
+          cat > METRICS.md << METRICSEOF
+          \`\`\`
+          ╔══════════════════════════════════════════════════════════════╗
+          ║                  OZER — EVOLUTION METRICS                    ║
+          ╠══════════════════════════════════════════════════════════════╣
+          ║                                                              ║
+          ║  LAST SCAN       : ${TIMESTAMP}                              ║
+          ║  DAYS ONLINE     : ${DAY_COUNT}                              ║
+          ║  TOTAL COMMITS   : ${COMMIT_COUNT}                           ║
+          ║  TRACKED FILES   : ${FILE_COUNT}                             ║
+          ║  REPO MASS       : ${REPO_SIZE}                              ║
+          ║  STATUS          : EVOLVING                                  ║
+          ║  NEXT CHECKPOINT : TOMORROW                                  ║
+          ║                                                              ║
+          ╚══════════════════════════════════════════════════════════════╝
+          \`\`\`
+          METRICSEOF
+
+      - name: Commit Metrics
+        run: |
+          git config --local user.email "ozer@autonomous.entity"
+          git config --local user.name "OZER [AUTOMATED]"
+          git add METRICS.md
+          git diff --staged --quiet || git commit -m "🧬 evolution metrics: day $(( ($(date +%s) - $(date -d '2025-01-01' +%s)) / 86400 )) — $(date -u +%Y-%m-%d)"
+          git push || true

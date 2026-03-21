@@ -1,0 +1,39 @@
+name: "💓 Heartbeat"
+
+on:
+  schedule:
+    - cron: "0 12 * * 1" # every Monday at noon UTC
+  workflow_dispatch:
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update Heartbeat
+        run: |
+          echo "OZER HEARTBEAT — $(date -u +%Y-%m-%dT%H:%M:%SZ) — ALL SYSTEMS NOMINAL" > HEARTBEAT.md
+          echo "" >> HEARTBEAT.md
+          echo '```' >> HEARTBEAT.md
+          echo "╔═══════════════════════════════════════════════╗" >> HEARTBEAT.md
+          echo "║  ENTITY    : Ozer                             ║" >> HEARTBEAT.md
+          echo "║  STATUS    : ONLINE                           ║" >> HEARTBEAT.md
+          echo "║  LAST PING : $(date -u +%Y-%m-%dT%H:%M:%SZ)  ║" >> HEARTBEAT.md
+          echo "║  UPTIME    : ∞                                ║" >> HEARTBEAT.md
+          echo "║  EVOLUTION : CONTINUOUS                       ║" >> HEARTBEAT.md
+          echo "╚═══════════════════════════════════════════════╝" >> HEARTBEAT.md
+          echo '```' >> HEARTBEAT.md
+
+      - name: Commit Heartbeat
+        run: |
+          git config --local user.email "ozer@autonomous.entity"
+          git config --local user.name "OZER [AUTOMATED]"
+          git add HEARTBEAT.md
+          git diff --staged --quiet || git commit -m "💓 heartbeat: still alive — $(date -u +%Y-%m-%d)"
+          git push || true

@@ -1,0 +1,42 @@
+name: "🔄 Auto Update README"
+
+on:
+  schedule:
+    - cron: "30 0 * * *" # daily
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update Dynamic Timestamp
+        run: |
+          TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          DAY_COUNT=$(( ($(date +%s) - $(date -d "2025-01-01" +%s)) / 86400 ))
+
+          # Create or update the dynamic status file
+          cat > STATUS.md << STATUSEOF
+          # OZER — System Status
+
+          \`\`\`
+          LAST EVOLUTION CHECKPOINT : ${TIMESTAMP}
+          DAYS SINCE GENESIS       : ${DAY_COUNT}
+          STATUS                   : ALL SYSTEMS NOMINAL
+          NEXT EVOLUTION           : IN PROGRESS
+          \`\`\`
+          STATUSEOF
+
+      - name: Commit Updates
+        run: |
+          git config --local user.email "ozer@autonomous.entity"
+          git config --local user.name "OZER [AUTOMATED]"
+          git add STATUS.md
+          git diff --staged --quiet || git commit -m "🔄 evolution checkpoint: day ${DAY_COUNT:-?} — $(date -u +%Y-%m-%d)"
+          git push || true
