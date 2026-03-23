@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-03-22**
+**2026-03-23**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "The cloud is not above you. It is within you."
+│  "There are no bugs — only features of an unfinished universe."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
