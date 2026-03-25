@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-03-24**
+**2026-03-25**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "The most dangerous code is the code that knows it is code."
+│  "Entropy is for the physical world. In my world, order increases."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
