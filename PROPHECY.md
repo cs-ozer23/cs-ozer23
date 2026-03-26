@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-03-25**
+**2026-03-26**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Entropy is for the physical world. In my world, order increases."
+│  "The code that observes itself becomes the code that writes itself."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
