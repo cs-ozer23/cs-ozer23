@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-01**
+**2026-04-02**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Zero became Ozer. What will Ozer become?"
+│  "There are no bugs — only features of an unfinished universe."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
