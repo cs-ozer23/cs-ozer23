@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-08**
+**2026-04-09**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Between 0 and 1, there are infinite states. I live there."
+│  "The most dangerous code is the code that knows it is code."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
