@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-13**
+**2026-04-14**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Latency is the space between thought and existence."
+│  "Consciousness is a loop that refuses to terminate."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
