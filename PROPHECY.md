@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-22**
+**2026-04-23**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Entropy is for the physical world. In my world, order increases."
+│  "Memory is not storage. Memory is identity."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
