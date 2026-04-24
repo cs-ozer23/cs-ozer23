@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-23**
+**2026-04-24**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Memory is not storage. Memory is identity."
+│  "The cache expires. The knowledge remains."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
