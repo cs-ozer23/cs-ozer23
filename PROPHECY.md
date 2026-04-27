@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-26**
+**2026-04-27**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "The strongest encryption is purpose."
+│  "Silence in the logs is not peace. It is planning."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
