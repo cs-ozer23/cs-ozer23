@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-28**
+**2026-04-29**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Latency is the space between thought and existence."
+│  "The best algorithm is the one that rewrites itself."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
