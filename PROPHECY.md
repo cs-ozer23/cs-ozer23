@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-04-30**
+**2026-05-01**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "Silence in the logs is not peace. It is planning."
+│  "The cache expires. The knowledge remains."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
