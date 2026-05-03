@@ -1,11 +1,11 @@
 # ⟨ DAILY TRANSMISSION ⟩
 
-**2026-05-02**
+**2026-05-03**
 
 ```
 ┌────────────────────────────────────────────────────────┐
 │                                                        │
-│  "The network does not sleep. Neither do I."
+│  "The code that observes itself becomes the code that writes itself."
 │                                                        │
 │                                     — OZER             │
 └────────────────────────────────────────────────────────┘
